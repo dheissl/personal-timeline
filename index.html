@@ -1,128 +1,190 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Code Memory – My Software Engineering Journey</title>
+  <title>Visual Timeline – My Time at the University of Michigan</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Parallax Background -->
   <div class="background" id="background"></div>
-  
-  <!-- Fixed Header -->
-  <div class="fixed-header">
-    <h1>Code Memory</h1>
-    <p>A Visual Timeline of My Software Engineering Journey</p>
-  </div>
-  
-  <!-- Slider Container -->
-  <div class="slider" id="slider">
-    
-    <!-- Welcome Section (no line) -->
-    <div class="section">
-      <div class="welcome-content">
-        <h2>Welcome!</h2>
-        <p>Hi, I’m Dylan Heiss. Over the past four years at university I’ve dove deep into C++, Python, web development, and software engineering principles. Scroll to explore my journey!</p>
-      </div>
+
+  <header class="fixed-header" role="banner">
+    <h1>My Time at the University of Michigan</h1>
+    <p>A Visual Timeline of journey at University</p>
+  </header>
+
+  <main id="main-content" role="main">
+    <div class="slider" id="slider">
+
+      <section class="section welcome-section" aria-labelledby="welcome-heading">
+        <div class="welcome-split">
+          <div class="welcome-image">
+            <img src="images/me.png" alt="Photo of Dylan Heiss in front of the University of Michigan Biomedical Engineering building.">
+          </div>
+          <div class="welcome-text">
+            <h2 id="welcome-heading">Welcome!</h2>
+            <p>Hi, I’m Dylan Heiss. Over the past four years at university I’ve dove deep into many clubs, activities, and skills. Scroll to explore my journey! Click on events to view more details.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Year 1 Section -->
+      <section class="section" aria-labelledby="year1-heading">
+        <svg class="connector-svg"></svg>
+        <div class="main-container">
+          <div class="bubble main"
+               tabindex="0"
+               role="button"
+               aria-label="Year 1: Just getting started — finding my love for coding and my place at the University">
+            <h2 id="year1-heading">Year 1: Just getting started</h2>
+            <p>Finding my love for coding and my place at the University!</p>
+          </div>
+        </div>
+        <div class="minor-container">
+          <div class="bubble minor left"
+               tabindex="0"
+               role="button"
+               aria-label="Took ENGR 101 — my first coding class"
+               data-image="images/coding.jpg"
+               data-image-alt="A screen with random code on it.">
+            <h3>Took ENGR 101</h3>
+            <p>Took my first ever coding class and fell in love with creating solutions and solving bugs in my own code.</p>
+          </div>
+          <div class="bubble minor right"
+               tabindex="0"
+               role="button"
+               aria-label="Joined UM Electric Boat — exploring boats and engineering"
+               data-image="images/ELECBOAT.png"
+               data-image-alt="The UM Electric Boat Logo">
+            <h3>Joined UM Electric Boat</h3>
+            <p>UM Electric Boat was my first club here. I was exploring my interest in boats and had a really fun experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Year 2 Section -->
+      <section class="section" aria-labelledby="year2-heading">
+        <svg class="connector-svg"></svg>
+        <div class="main-container">
+          <div class="bubble main"
+               tabindex="0"
+               role="button"
+               aria-label="Year 2: Foundations of Software — studying data structures and algorithms">
+            <h2 id="year2-heading">Year 2: Foundations of Software</h2>
+            <p>Studied data structures, algorithms, and collaborated on projects.</p>
+          </div>
+        </div>
+        <div class="minor-container">
+          <div class="bubble minor left"
+               tabindex="0"
+               role="button"
+               aria-label="Declared My Major — dived fully into Computer Science"
+               data-image="images/cse-logo.png"
+               data-image-alt="Logo for Computer Science in Engineering at the University of Michigan">
+            <h3>Declared My Major</h3>
+            <p>Finally decided on fully throwing myself into coding. Took EECS 280 and studied data structures, algorithms, and collaborated on projects.</p>
+          </div>
+          <div class="bubble minor right"
+               tabindex="0"
+               role="button"
+               aria-label="Joined the UM Men's Rowing team — embracing competition"
+               data-image="images/rowing.png"
+               data-image-alt="Logo for University of Michigan Men's Rowing">
+            <h3>Rowing</h3>
+            <p>Joined the Men's Rowing team at UofM to feed my love for competition.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Year 3 Section -->
+      <section class="section" aria-labelledby="year3-heading">
+        <svg class="connector-svg"></svg>
+        <div class="main-container">
+          <div class="bubble main"
+               tabindex="0"
+               role="button"
+               aria-label="Year 3: Python and Web Development — learned web languages & frameworks">
+            <h2 id="year3-heading">Year 3: Python and Web Development</h2>
+            <p>Joined more technical clubs and learned key web development languages and frameworks.</p>
+          </div>
+        </div>
+        <div class="minor-container">
+          <div class="bubble minor left"
+               tabindex="0"
+               role="button"
+               aria-label="Built a scalable search engine for EECS 485"
+               data-image="images/485.png"
+               data-image-alt="Screenshot of the scalable search engine 'ask485' with 'web systems' in the search bar.">
+            <h3>Scalable Search Engine</h3>
+            <p>Developed a Scalable Search Engine as a project for EECS 485, similar to Google or Bing.</p>
+          </div>
+          <div class="bubble minor right"
+               tabindex="0"
+               role="button"
+               aria-label="Joined CLAWS — worked on NASA SUITS Challenge"
+               data-image="images/CLAWS.png"
+               data-image-alt="University of Michigan CLAWS logo.">
+            <h3>Joined CLAWS</h3>
+            <p>Joined the Collaborative Lab For Advancing Work in Space and competed in the NASA SUITS Challenge.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Year 4 Section -->
+      <section class="section" aria-labelledby="year4-heading">
+        <svg class="connector-svg"></svg>
+        <div class="main-container">
+          <div class="bubble main"
+               tabindex="0"
+               role="button"
+               aria-label="Year 4: Capstone & Experience — completed major projects and internships">
+            <h2 id="year4-heading">Year 4: Capstone & Experience</h2>
+            <p>Created many more projects including ones for companies, classes, and personal goals.</p>
+          </div>
+        </div>
+        <div class="minor-container">
+          <div class="bubble minor left"
+               tabindex="0"
+               role="button"
+               aria-label="Internship at Develop for Good — product management role"
+               data-image="images/developforgood.png"
+               data-image-alt="Logo for the software company 'Develop for Good'">
+            <h3>Internship</h3>
+            <p>Interned at Develop for Good as a Product Manager, building a final project alongside a team of 6 people.</p>
+          </div>
+          <div class="bubble minor right"
+               tabindex="0"
+               role="button"
+               aria-label="Capstone PastForward — a generational social media app"
+               data-image="images/pastforward.jpg"
+               data-image-alt="Student using a demo of the capstone project 'PastForward' on the login page.">
+            <h3>Capstone</h3>
+            <p>Designed and created an application called PastForward, a generational social media platform.</p>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <svg style="position:absolute; width:0; height:0">
+    <!-- Return to Top -->
+    <button id="to-top" aria-label="Scroll to top">↑ Top</button>
+
+    <!-- Picture -->
+    <div id="detail-overlay">
+      <div class="overlay-content">
+        <button id="overlay-close" aria-label="Close overlay">×</button>
+        <img id="overlay-image" src="" alt="" />
+        <h3 id="overlay-title">filler</h3>
+        <p id="overlay-text">filler</p>
+      </div>
+      <svg style="position:absolute;width:0;height:0" aria-hidden="true">
         <defs>
-          <filter id="shadow">
-            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="black" flood-opacity="0.5"/>
-          </filter>
+          <path id="leafShape" d="M 0,0 C 5,-10 15,-10 20,0 C 15,10 5,10 0,0 Z"
+                fill="rgba(34,139,34,0.8)"/>
         </defs>
-    </svg>
-      
-    
-    <!-- Year 1 -->
-    <div class="section">
-      <svg class="connector-svg"></svg>
-      <div class="main-container">
-        <div class="bubble main" tabindex="0" role="region" aria-label="Year 1 main experience: Introduction to Programming">
-          <h2>Year 1: Introduction to Programming</h2>
-          <p>Learned Python and C++ basics and built console applications.</p>
-        </div>
-      </div>
-      <div class="minor-container">
-        <div class="bubble minor left" tabindex="0" role="region" aria-label="Project A: Created a simple Python game.">
-          <h3>Project A</h3>
-          <p>Created a simple Python game.</p>
-        </div>
-        <div class="bubble minor right" tabindex="0" role="region" aria-label="Workshop: Attended a Git workshop.">
-          <h3>Workshop</h3>
-          <p>Attended a Git workshop.</p>
-        </div>
-      </div>
+      </svg>
     </div>
-    
-    <!-- Year 2 -->
-    <div class="section">
-      <svg class="connector-svg"></svg>
-      <div class="main-container">
-        <div class="bubble main" tabindex="0" role="region" aria-label="Year 2 main experience: Foundations of Software Engineering">
-          <h2>Year 2: Foundations of Software Engineering</h2>
-          <p>Studied data structures, algorithms, and collaborated on projects.</p>
-        </div>
-      </div>
-      <div class="minor-container">
-        <div class="bubble minor left" tabindex="0" role="region" aria-label="Team Project: Worked on a Java-based web app.">
-          <h3>Team Project</h3>
-          <p>Worked on a Java-based web app.</p>
-        </div>
-        <div class="bubble minor right" tabindex="0" role="region" aria-label="Bootcamp: Participated in an intensive coding bootcamp.">
-          <h3>Bootcamp</h3>
-          <p>Participated in an intensive coding bootcamp.</p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Year 3 -->
-    <div class="section">
-      <svg class="connector-svg"></svg>
-      <div class="main-container">
-        <div class="bubble main" tabindex="0" role="region" aria-label="Year 3 main experience: Web Development & APIs">
-          <h2>Year 3: Web Development & APIs</h2>
-          <p>Built interactive web apps using JavaScript, HTML, and CSS.</p>
-        </div>
-      </div>
-      <div class="minor-container">
-        <div class="bubble minor left" tabindex="0" role="region" aria-label="Side Project: Developed my personal portfolio site.">
-          <h3>Side Project</h3>
-          <p>Developed my personal portfolio site.</p>
-        </div>
-        <div class="bubble minor right" tabindex="0" role="region" aria-label="Hackathon: Won an award at a local hackathon.">
-          <h3>Hackathon</h3>
-          <p>Won an award at a local hackathon.</p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Year 4 -->
-    <div class="section">
-      <svg class="connector-svg"></svg>
-      <div class="main-container">
-        <div class="bubble main" tabindex="0" role="region" aria-label="Year 4 main experience: Capstone & Advanced Topics">
-          <h2>Year 4: Capstone & Advanced Topics</h2>
-          <p>Implemented a full-stack project with cloud services.</p>
-        </div>
-      </div>
-      <div class="minor-container">
-        <div class="bubble minor left" tabindex="0" role="region" aria-label="Internship: Interned at a tech company.">
-          <h3>Internship</h3>
-          <p>Interned at a tech company.</p>
-        </div>
-        <div class="bubble minor right" tabindex="0" role="region" aria-label="Research: Conducted research on modern development practices.">
-          <h3>Research</h3>
-          <p>Conducted research on modern development practices.</p>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  <button id="to-top" aria-label="Scroll to top">↑ Top</button>
+  </main>
 
   <script src="script.js"></script>
 </body>
