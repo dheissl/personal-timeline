@@ -9,9 +9,9 @@ html, body {
 }
 body {
   font-family: Arial, sans-serif;
-  overflow: hidden;              /* we control scrolling in JS */
-  background: white;             /* mobile: plain background */
-  background-attachment: fixed;  /* for parallax on mobile too */
+  overflow: hidden;           
+  background: white;           
+  background-attachment: fixed;
   background-size: 400% 400%;
 }
 
@@ -196,7 +196,7 @@ body {
 
 /* To Top */
 #to-top {
-  display: none; /* will be toggled in JS */
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
